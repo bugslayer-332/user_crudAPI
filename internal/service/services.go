@@ -35,6 +35,8 @@ func CreateUser(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Access-Control-Allow-Methods", "POST")
 	w.Header().Set("Access-Control-Allow-Headers", "Content-Type")
 
+	log.Println("COMING>>>>>")
+
 	// create an empty user of type models.User
 	var user model.User
 
